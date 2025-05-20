@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autopartes Xin | Carrito</title>
+
+    <!-- Seteo de icono -->
+    <link rel="icon" href="../../assets/icono.png">
+
+    <!-- Importacion de archivo CSS (Estilos) -->
+    <link rel="stylesheet" href="./carrito.css">
+
+    <!-- Importacion de archivo JS (Comportamiento) -->
+    <script src="./carrito.js"></script>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <img id="icono-principal" src="../../assets/icono.png" alt="Logo Autopartes" />
+        <h1 id="titulo-principal">Autopartes Xin</h1>
+
+        <nav id="listado-opciones">
+            <a href="../../index.html">Inicio</a>
+            <a href="#componentes">Componentes</a>
+            <a href="#iluminacion">Iluminacion</a>
+            <a href="#accesorios">Accesorios</a>
+            <a href="./pages/carrito/carrito.html">Mi carrito</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la pagina -->
+    <main>
+        <div id="contenedor-tabla">
+            <table id="tabla-carrito">
+                <tr class="fila-header-carrito">
+                    <td class="celda-header-tabla-carrito">Nombre del producto</td>
+                    <td class="celda-header-tabla-carrito">Cantidad</td>
+                    <td class="celda-header-tabla-carrito">Precio unitario</td>
+                </tr>
+            </table>
+        </div>
+        <button class="btn-limpiar-carrito">Limpiar carrito</button>
+        <h2 id="valor-final">El valor final a pagar es de: $0</h2>
+    </main>
+</body>
+</html>

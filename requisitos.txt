@@ -1,0 +1,38 @@
+Requisitos HTML
+a) Hacer un frontend similar al mostrado  https://imgur.com/a/f3M79ZY, se da una "template" a respetar.
+    Se considerará cómo fue estructurado, el nombre de las clases utilizado, ids,
+
+Requisitos CSS
+a) El color de fuente de los precios debe ser: #ca9013
+b) El color de fuente de las descripciones de cada producto debe ser: #808080
+c) El color de fondo del encabezado (header) debe ser: #000000
+d) El color de fondo del footer (pie de pagina) debe ser: #000000
+e) El color de fondo de los contenedores (cards) de cada producto debe ser: #000000
+f) El color de fondo del cuerpo de pagina (body) deberá verse con un negro más claro: #161616
+g) Los contenedores (cards) de cada producto deberán tener un espaciado interno en todos sus lados de minimo 15px.
+h) Los contenedores (cards) de cada producto deberán tener un espaciado externo en todos sus lados de minimo 15px.
+i) Los contenedores (cards) de cada producto deberán tener sus 4 bordes de esquinas redondeados en un mínimo de 16px.
+j) Todas las imagenes de los productos deberán tener la misma altura y anchura (siendo 100% del ancho posible y 180px de alto).
+k) El título (nombre) del producto (que está dentro del contenedor/card) deberá estar alineado al centro (en el medio).
+l) El icono principal (que está ubicado dentro del header/encabezado arriba a la izquierda) deberá tener un ancho de 55px y un alto de 55px.
+m) Las imagenes de cada producto deben estar referenciadas a su correspondiente carpeta y de manera ordenada.
+
+Requisitos JS
+a) Lograr que en el INICIO al tocar el boton "+" sobre un producto se guarde en LocalStorage dentro de un listado (array). 
+b) Considerar que si no existía el producto previamente, se deberá agregar y comenzando su cantidad en 1.
+c) Considerar que si existía previamente, solo se deberá aumentar el campo "cantidad" del producto en 1.
+d) Considerar que se deberá mostrar un "alert()" que diga el nombre del producto agregado.
+e) Considerar que si no existía ningún dato de ningún producto/carrito en el LocalStorage, se cree el carrito correctamente (array de objetos) con el primer producto agregado.
+f) Considerar que se imprima en consola cómo quedó el carrito (array de objetos) previamente a ser subido al LocalStorage.
+g) Lograr que en el INICIO al tocar el boton "-" se decremente en LocalStorage el producto de un listado (array).
+h) Considerar que si no existía previamente el producto, solo deberemos mostrar un "alert()" que diga el nombre del producto no hay más.
+i) Considerar que si existía previamente, se deberá decrementar el campo "cantidad" del producto en 1. y se deberá mostrar un "alert()" que diga el nombre del producto decrementado.
+j) Considerar que el carrito NO ALMACENE ningun producto que tenga su cantidad en 0.
+k) Considerar en caso de que se intente eliminar un producto, mostrar un "alert()" avisando que el carrito esta actualmente vacio. 
+
+a) Considerar que al entrar a la pagina, se deberá leer el LocalStorage y agregarse a la tabla, con filas dinamicamente, el listado de productos respetando los campos; Nombre del producto - Cantidad - Precio unitario
+b) Considerar que no deben haber productos iguales/repetidos, porque para eso tenemos el campo "cantidad" (Referencia: punto 2c).
+c) Considerar que la cantidad sea un numero válido. (Referencia: punto 2j).  La hamburguesería definió un minimo de 1 (un producto).
+d) Deberá haber un boton de "Limpiar carrito" que nos permita borrar/limpiar todo el LocalStorage, causando así el borrado total de todos los productos agregados al carrito. Se debera mostrar un "alert()" "Carrito limpiado correctamente".
+e) Considerar que en caso de no haber productos agregados al carrito, se muestre en el valor total final a pagar: 0$
+f) Tener en cuenta que el monto total a pagar considere la cantidad de los productos y no solo su precio unitario. 2 aguas sin gas a 2000 pesos, el monto final a pagar será 4000. No 2000.
