@@ -1,6 +1,6 @@
 Requisitos HTML
 a) Hacer un frontend similar al mostrado  https://imgur.com/a/f3M79ZY, se da una "template" a respetar.
-    Se considerará cómo fue estructurado, el nombre de las clases utilizado, ids,
+    Se considerará cómo fue estructurado, el nombre de las clases utilizado, ids, etc
 
 Requisitos CSS
 a) El color de fuente de los precios debe ser: #ca9013
