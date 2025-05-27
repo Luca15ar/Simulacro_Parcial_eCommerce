@@ -19,7 +19,7 @@ function sumarAlCarrito(e)
     //--- Obtengo la referencia al elemento clickeado desde en base al evento (Propiedad exclusivamente de todos los Events) ---//
     let elementoClickeado = e.target;
 
-    let liContenedor = elementoClickeado.parentNode;
+    let liContenedor = elementoClickeado.closest("li");
 
     let elementoNombre = liContenedor.querySelector(".nombre-producto");
     let elementoPrecio = liContenedor.querySelector(".precio-producto");
@@ -50,7 +50,6 @@ function sumarAlCarrito(e)
     {
         // --- No existe el carrito ---
         carritoParseado = [];
-
     }
 
     if(!flagProductoPreExistente)
@@ -75,7 +74,7 @@ function restarDelCarrito(e)
     //--- Obtengo la referencia al elemento clickeado desde en base al evento (Propiedad exclusivamente de todos los Events) ---//
     let elementoClickeado = e.target;
 
-    let liContenedor = elementoClickeado.parentNode;
+    let liContenedor = elementoClickeado.closest("li");
 
     let elementoNombre = liContenedor.querySelector(".nombre-producto");
     let elementoPrecio = liContenedor.querySelector(".precio-producto");
@@ -141,7 +140,7 @@ function restarDelCarrito(e)
 window.addEventListener("DOMContentLoaded", () => 
 {
     const botonesSumar = document.querySelectorAll(".btn-agregar-producto");
-    const botonesRestar = document.querySelectorAll(".btn-quitar-producto");
+    const botonesRestar = document.querySelectorAll(".btn-eliminar-producto");
 
     botonesSumar.forEach(btn => btn.addEventListener("click", sumarAlCarrito));
     botonesRestar.forEach(btn => btn.addEventListener("click", restarDelCarrito));
